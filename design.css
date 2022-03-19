@@ -110,13 +110,33 @@ nav .nav-about,a:nth-child(4):hover~.animation
   left: 75%;
 
 }
+
+
+/*--------------------------------------------------------------------------------------------------------------*/
 .mainbody
 {
    
-  font-family: "Varela Round";
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size:medium;
   font-weight:bolder;
+  
 }
+.box-wrapper    /*box around switches*/
+{
+  
+  margin: 10px 5px 10px 5px;
+  height: 90px;
+  width:auto;
+  display:"flex";
+  flex-direction: row;
+  border:seashell;
+  padding: 3px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgb(94, 92, 92);
+  
+
+}
+
 
 /* The switch - the box around the slider */
 .switch {
@@ -181,8 +201,15 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+ /*------------------------------------------------------------------------------------------------------------------*/
+ 
 
 
+
+
+ 
+ 
+ /*--------------------------------------------------------------------------------------------------------------*/
 /*table*/
 
 table{
