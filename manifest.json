@@ -16,9 +16,13 @@
     ],
     "action":{
         "default_popup":"popup.html",
-        "default_icon":"2.png"
+        "default_icon":"logo.png"
         
-    }
+    },
+    "permissions": [
+        "activeTab",
+        "storage"
+      ]
 
 
 }
