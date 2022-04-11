@@ -2,6 +2,9 @@
     "name": "Custodian",
     "version": "1.0.0",
     "manifest_version": 3 ,
+    "background":{
+        "service_worker": "serviceWorker.js"
+      },
     "content_scripts":[
         {
             "matches":
@@ -9,9 +12,10 @@
                "*://*.youtube.com/*",
                "*://*.facebook.com/*",
                "*://*.instagram.com/*",
-               "*://*.twitter.com/*"
+               "*://*/twitter.com/*"
             ],
           "js":["content.js"]
+        
         }
     ],
     "action":{
@@ -19,9 +23,11 @@
         "default_icon":"logo.png"
         
     },
+   
     "permissions": [
         "activeTab",
-        "storage"
+        "storage",
+        "scripting"
       ]
 
 
