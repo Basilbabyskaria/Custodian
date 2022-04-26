@@ -128,7 +128,7 @@ nav .nav-about,a:nth-child(4):hover~.animation
 {
   
   margin: 10px 5px 10px 5px;
-  height: 90px;
+  
   width:auto;
   display:"flex";
   flex-direction: row;
