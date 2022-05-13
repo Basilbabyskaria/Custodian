@@ -21,7 +21,9 @@
     },
     "permissions": [
         "activeTab",
-        "storage"
+        "storage",
+        "http://localhost/*"
+        
       ]
 
 

@@ -8,6 +8,7 @@
       <title>...</title> 
         
       <link rel="stylesheet" href="design.css">
+      <script src="jquery.min.js"></script>
    </head> 
    <body style="width: 350px ; height: 500px;">
       <div class ="header">
@@ -24,27 +25,26 @@
 
       </nav> 
         
+      
+      <div>
+           
       <div class ="mainbody">
-       <div class="box-wrapper"style="height: 135px;">
-         <p style="margin-top: 5%;margin-bottom: 5%;margin-left: 12%;">Word
-          <input  style="margin-left:80px;"type="text" name="bad_word" value="">
-         </p>
-
-         <p style="margin-top: 5%;margin-bottom: 5%;margin-left: 12%;">Action
-         <select style="margin-left:75px;">
-            <option value="1">Replace</option>
-            <option value="2">Blur</option>
-            <option value="3">Remove</option>
-         </select>
-         </p>
-
-         <p style="margin-bottom: 80%;margin-left: 12%;">Replacement
-            <input style="margin-left:25px;"type="text" name="Replacement_word" value="">
-         </p>
-   
-       </div>
-     </div>
-      </body>
+         <div class="box-wrapper"style="height: 170px;">
+            <form action="http://localhost/db1/script.php"method ="POST">
+               <!--<p style="margin-top: 5%;margin-bottom: 5%;margin-left: 12%;">Word-->
+                  <input  style="margin-left:80px;"type="text" name="bullying_words" value="">
+              <!--- </p>-->
+              <!---<p style="margin-bottom: 80%;margin-left: 12%;">Replacement-->
+                    <input style="margin-left:25px;"type="text" name="Replacement" value="">
+                    <input type="submit"value="go"name ="submit"> 
+              <!--- </p> -->
+            </form>
+         </div>
+         <div style="height: 200px;border-radius: 8px;border: black;">
+         </div>
+      </div>
+           
+      </div>
 
    </body>
   
